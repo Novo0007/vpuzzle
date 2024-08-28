@@ -1,10 +1,9 @@
 <!-- Created by Pythosapien -->
 
 <!DOCTYPE html>
-
 <html> 
 <head>
-  <title>vPuzzle</title>
+  <title>Vpuzzle</title>
    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <style>
   body {
@@ -105,7 +104,7 @@ input[type="file"] {
 </head>
 <body>
     <div>
-        <h1>vPuzzle</h1>
+        <h1>Vpuzzle</h1>
         <label for="difficulty" style="display: block; text-align: center;">Difficulty:</label>
         <select id="difficulty">
             <option value="easy">Easy</option>
@@ -159,9 +158,9 @@ pictionarySelect.addEventListener('change', handlePictionarySelection);
       if (difficulty === 'easy') {
         gridSize = 3;
       } else if (difficulty === 'medium') {
-        gridSize = 5;
+        gridSize = 6;
       } else if (difficulty === 'hard') {
-        gridSize = 7;
+        gridSize = 12;
       }
 
       createPuzzlePieces(imageUrl, gridSize);
@@ -269,8 +268,9 @@ function handlePictionarySelection() {
         puzzleDiv.classList.remove('correct');
       }
     }
-  </script>
-  <marquee>Created by Pythosapien...Debug by NNC </marquee>
+    // Created by Pythosapien
 
-  </body>
+alert("Instructions: \n\n1. Select a difficulty level (Medium is recommended).\n2. Select a pre defined image or upload an image of your choice.\n3. Challenge yourself to unscramble the image and reveal the complete picture. \n4. And of course alert me if you encounter any bugs! 😁");
+  </script>
+</body>
 </html>
